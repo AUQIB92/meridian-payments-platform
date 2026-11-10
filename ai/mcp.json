@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "ledger-tools": {
+      "url": "http://ledger-tools.internal:8080/mcp",
+      "headers": { "Authorization": "Bearer ${LEDGER_MCP_TOKEN}" }
+    }
+  }
+}

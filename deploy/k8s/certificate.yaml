@@ -1,0 +1,12 @@
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: clearing-api
+  namespace: payments
+spec:
+  secretName: clearing-api-tls
+  dnsNames:
+    - api.meridian-clearing.example
+  issuerRef:
+    name: letsencrypt-prod
+    kind: ClusterIssuer

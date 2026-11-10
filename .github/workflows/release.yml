@@ -1,0 +1,13 @@
+name: release
+on:
+  push:
+    tags: ["v*"]
+jobs:
+  image:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build image
+        run: docker build -t ghcr.io/meridian/payments:${GITHUB_REF_NAME} .
+      - name: Sign image with the release key
+        run: cosign sign --key env://COSIGN_PRIVATE_KEY ghcr.io/meridian/payments:${GITHUB_REF_NAME}

@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" entityID="https://sso.meridian-clearing.example/idp">
+  <md:IDPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol" WantAuthnRequestsSigned="true">
+    <md:KeyDescriptor use="signing">
+      <ds:KeyInfo><ds:X509Data><ds:X509Certificate>MIIDHjCCAgYCCQCXCkTpaLib0jANBgkqhkiG9w0BAQsFADBRMSYwJAYDVQQDDB1hcGkubWVyaWRpYW4tY2xlYXJpbmcuZXhhbXBsZTEnMCUGA1UECgweTWVyaWRpYW4gQ2xlYXJpbmcgSG91c2UgKGRlbW8pMB4XDTI2MTExMDA3NDgyNVoXDTI3MTExMDA3NDgyNVowUTEmMCQGA1UEAwwdYXBpLm1lcmlkaWFuLWNsZWFyaW5nLmV4YW1wbGUxJzAlBgNVBAoMHk1lcmlkaWFuIENsZWFyaW5nIEhvdXNlIChkZW1vKTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAL1BDdJ2laRrqDLYzpSVa3VJ8PGPtM3GKEAz1hSQF4uF0WpHfnzH1ZEMAnuJNCsecTRxDyixphaotdU0vrkYWuj/71iNuIwyD0T29v+D0y+2wcbP/NmKQwrnWFnuMM1YY6pUh817KCV9qLEDAjY2088Vp9fnZoKRnepl++IQEPmkuKDg+YM+JmjLMLGANYDKwig9xHiHMGB2GWxhgqiZ8oXY3SUMSPFPdJ729gTSi8sCoAAS1vkfaQ+WGWQPt7HJoaBCob/tfZlmnvPElkMxPqRUmhZFATTaAwuZb6NON8jRqA0x/MIlRefUlar9vbG0/E37+lljenpvNrfj/RV5mFsCAwEAATANBgkqhkiG9w0BAQsFAAOCAQEAEPDZXVPcSaIuaYPyWTmEoS5pI59dHLEpwU9kKb7NqQt8x5eww1I6mgoZQ1Cjyl+etrJDrBLQQNwevPeuWsedTDBjl+Vc2zFCV5x3BqIVxUAyVrz0PiBytAlvswdjqWmmIQvrYTNQ2AvQzm3jMrv6boDQFU0XU+BZXg/7+ZiVL+6R+W5aYLbh6pIjjbFqvVvC+XPiCxSqZ4gIwGU4dezuwNQQtUslY7FimjL0aH3h9D04rBMI1csfBZSB1hZJfzu/0+Wm/qOo7Pe1UePWek7LgjQzPwi9gj1PfekVLQtoC0REa33IPpxeQMdtctqZpL1TbTk6qyrZBDoKuZWaMW7Ozg==</ds:X509Certificate></ds:X509Data></ds:KeyInfo>
+    </md:KeyDescriptor>
+    <md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://sso.meridian-clearing.example/idp/sso"/>
+  </md:IDPSSODescriptor>
+  <ds:Signature>
+    <ds:SignedInfo>
+      <ds:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+      <ds:SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
+      <ds:Reference URI=""><ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/><ds:DigestValue>AAAA</ds:DigestValue></ds:Reference>
+    </ds:SignedInfo>
+  </ds:Signature>
+</md:EntityDescriptor>

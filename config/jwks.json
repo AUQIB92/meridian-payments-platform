@@ -1,0 +1,12 @@
+{
+  "keys": [
+    {
+      "kty": "RSA",
+      "use": "sig",
+      "alg": "RS256",
+      "kid": "meridian-partner-2024",
+      "n": "1HuoGt5ZvI5R5nQku8FbmhNKX2ZADtrCqkdJBsctRQqCpPHmyZhL5FVNwd1qpSm-ryFoMktDskLB_IiSjQapWhKTWCI3RSYasvkTD2tAIM6f1cRs29OsWquz1Ke2R4v2bNdpz5VhZx__FzQuZve1sFY2HiVCKM5GWpLEf7DvEPDXLpoFTpGuc_hXGx3hzoxq-TTLggXqOsOrtatBTxTSTAjKPT7MVQtrfDAjzi7BxKrOPatlC4FKMJt-9IXy2R0R0jX0hgk7gbUL9biS9mz5quTRRdFB6ruZxKePerq91-t6VosxxdsRwFdP6qoKv06NwP8eR0P6oXS6OIKqncI7_Q",
+      "e": "AQAB"
+    }
+  ]
+}

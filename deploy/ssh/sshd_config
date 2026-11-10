@@ -1,0 +1,5 @@
+HostKey /etc/ssh/ssh_host_rsa_key
+HostKeyAlgorithms ssh-rsa,rsa-sha2-256
+KexAlgorithms curve25519-sha256,diffie-hellman-group14-sha1
+MACs hmac-sha1,hmac-sha2-256
+TrustedUserCAKeys /etc/ssh/ca.pub
